@@ -1,0 +1,9 @@
+/out/
+/build/
+/cmake-build-*/
+/thirdparty/
+/.cpm-cache/
+/runs/
+/captures/
+/.venv/
+__pycache__/

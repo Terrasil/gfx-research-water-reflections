@@ -1,0 +1,17 @@
+#pragma once
+namespace study {
+inline constexpr char title[] = "@title@";
+inline constexpr char id[] = "@project_id@";
+inline constexpr char kind[] = "@kind@";
+inline constexpr char parameter[] = "@parameter_label@";
+inline constexpr char root[] = R"path(@CMAKE_CURRENT_SOURCE_DIR@)path";
+inline constexpr char python[] = R"path(@Python3_EXECUTABLE@)path";
+inline constexpr const char* methodLabels[] = {@method_labels@};
+inline constexpr const char* methodIds[] = {@methods@};
+inline constexpr const char* sceneLabels[] = {@scene_labels@};
+inline constexpr const char* sceneIds[] = {@scenes@};
+inline constexpr const char* viewLabels[] = {@views@};
+inline constexpr int budgets[] = {@budgets@};
+inline constexpr double parameters[] = {@parameters@};
+inline constexpr int candidate = @candidate@;
+}

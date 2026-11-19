@@ -1,0 +1,54 @@
+{
+  "id": "gfx-research-water-reflections",
+  "kind": "water",
+  "title": "Water Reflections",
+  "methods": [
+    "uniform-bisect",
+    "projective-bisect",
+    "projective-secant",
+    "guarded-newton",
+    "free-newton"
+  ],
+  "method_labels": [
+    "World steps + bisection",
+    "Projective + bisection",
+    "Projective + secant",
+    "Projective + guarded Newton",
+    "Unbracketed Newton"
+  ],
+  "scenes": [
+    "quay",
+    "pilings",
+    "occluded-bank",
+    "tilted-metal",
+    "empty-sky"
+  ],
+  "scene_labels": [
+    "Quay and moorings",
+    "Thin pilings",
+    "Occluded shore",
+    "Tilted polished panel",
+    "Empty environment"
+  ],
+  "views": [
+    "oblique",
+    "reverse",
+    "grazing"
+  ],
+  "parameters": [
+    0,
+    0.14
+  ],
+  "parameter_label": "Wave slope scale",
+  "budgets": [
+    12,
+    32
+  ],
+  "baseline": 1,
+  "candidate": 3,
+  "primary_metric": "visible_recall",
+  "primary_scene": 1,
+  "primary_parameter": 0.14,
+  "guardrail": "wrong_hits_per_receiver",
+  "guardrail_label": "wrong hits per receiver"
+}
