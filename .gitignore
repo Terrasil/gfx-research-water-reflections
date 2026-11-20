@@ -4,6 +4,7 @@
 /thirdparty/
 /.cpm-cache/
 /runs/
+/results/
 /captures/
 /.venv/
 __pycache__/

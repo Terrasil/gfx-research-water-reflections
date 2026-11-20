@@ -80,9 +80,10 @@ def audit_quality(case, directory, rows):
                 raise ValueError(f"Metric mismatch in {case['id']} / {row['method']} / {key}")
 
 
-def analyze(root,paper,verify=True):
+def analyze(root,paper,verify=True,manifest=None):
     root=root.resolve()
-    manifest=json.loads((root/"manifest.json").read_text(encoding="utf-8"))
+    if manifest is None:
+        manifest=json.loads((root/"manifest.json").read_text(encoding="utf-8"))
     plan=manifest["plan"]
     if manifest["study"]!=STUDY["id"] or manifest["status"]!="complete":
         raise ValueError("A complete run of this study is required")
